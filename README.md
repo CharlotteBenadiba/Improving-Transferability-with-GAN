@@ -4,13 +4,13 @@ This project focuses on enhancing the transferability of adversarial attacks acr
 
 ## Table of Contents
 
-- [Definitions of Neural Networks](#Definitions-of-Neural-Networks)
-- [Training Target Models](#Training-Target-Models)
-- [Adv_GAN Attack with input diversity](#Adv_GAN-Attack-with-input-diversity)
-- [Attacking Target Models](#Attacking-Target-Models)
-- [Test the performance of Adv_GAN](#Test-the-performance-of-Adv_GAN)
-- [Visualization of the results](#Visualization-of-the-results)
-- [Discussion](#Discussion)
+- [1. Definitions of Neural Networks](#1.-Definitions-of-Neural-Networks)
+- [2. Training Target Models](#2.-Training-Target-Models)
+- [3. Adv_GAN Attack with input diversity](#3.-Adv_GAN-Attack-with-input-diversity)
+- [4. Attacking Target Models](#4.-Attacking-Target-Models)
+- [5. Test the performance of Adv_GAN](#5.-Test-the-performance-of-Adv_GAN)
+- [6. Visualization of the results](#6.-Visualization-of-the-results)
+- [7. Discussion](#7.-Discussion)
 
 ## Files
 
@@ -18,7 +18,7 @@ This project focuses on enhancing the transferability of adversarial attacks acr
 * paper available at https://fr.overleaf.com/read/fbxbtvdvfgpy
 
 ----
-## Definitions of Neural Networks
+## 1. Definitions of Neural Networks
 
 In this section we are first going to define the target models. There are three target models used in this project including two CNNs and a pre-trained ResNet50. The architecture of the two CNNs are as the followings:
 
