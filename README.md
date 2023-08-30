@@ -64,4 +64,24 @@ Test success rate:0.952917
 The test results are shown as above. Due to the capacity, we only show an example of the transerability of the first target model. The adv_GAN in this scenario is that it was trained to attack the first model then we use this pretrained generator to attack the second target model. We could find that the success rate of both training set and the test sets are higher for Adv-GAN with data transformation. 
 
 ###6. Visualization of the results
+Here is the display of a grid of images with their real and predicted labels
+<p align="center">
+  <img width="450" src="original.png">
+</p>
+
+Here are the adversarial images generated using pretrained generator and data transformation
+<p align="center">
+  <img width="450" src="generated1.png">
+</p>
+
+Here are the adversarial images generated using pretrained generator (no data transformation)
+<p align="center">
+  <img width="450" src="generated2.png">
+</p>
+
+###7. Discussions
+
+Based on the success rate, we could find that the data transformation actually helps to improve the transferability. We could also find the difference between the adversarial images with and without transformation.
+
+However, the work is limited because we have only developed three target models. Two of them are convolutional neural networks, although the architectures are slightly different. It would be more convincing if we build several various target models with different structures to see if it actually works when transfer to other models. In the paper, the authors developed 8 CNN models as their target models. The results demonstrate that it had effectively prevents the generator from overfitting and improves transferability. However, from their results, the data enhancement methods does not work well for some of the target models, but the success rate of some models were really high, which means that this method might not generalize to all models. We may adjust transformations regarding different models to see if we could find few transformation combinations that could generalize to various models.
 
